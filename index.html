@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MNEMOPHOBIA // PERSONAL ARCHIVE [1999-2003] // MIRROR #03</title>
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- BEGIN: Custom Retro Styles -->
+<style data-purpose="retro-typography">
+    body {
+      font-family: 'Verdana', 'Tahoma', 'Arial', sans-serif;
+      background-color: #060608;
+      color: #dfdfdf;
+      font-size: 11px;
+      line-height: 1.35;
+      image-rendering: pixelated;
+    }
+    h1, h2, h3, .heading-font {
+      font-family: 'Arial Black', 'Trebuchet MS', 'Arial', sans-serif;
+    }
+    .code-font {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    a {
+      color: #5599ff;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #b566ff;
+    }
+    a:hover {
+      color: #ff3333;
+      background-color: #ffff00;
+      text-decoration: none;
+    }
+  </style>
+<style data-purpose="bevel-and-borders">
+    .win-outset {
+      border-top: 2px solid #dfdfdf;
+      border-left: 2px solid #dfdfdf;
+      border-right: 2px solid #303030;
+      border-bottom: 2px solid #303030;
+    }
+    .win-inset {
+      border-top: 2px solid #202020;
+      border-left: 2px solid #202020;
+      border-right: 2px solid #777777;
+      border-bottom: 2px solid #777777;
+    }
+    .portal-box {
+      border: 1px solid #700000;
+      background-color: #0c0c0e;
+      box-shadow: 2px 2px 0px #000;
+    }
+    .portal-header {
+      background: linear-gradient(180deg, #900000 0%, #4a0000 50%, #200000 100%);
+      color: #ffffff;
+      font-weight: bold;
+      padding: 3px 6px;
+      border-bottom: 1px solid #ff3333;
+      text-shadow: 1px 1px 1px #000;
+      letter-spacing: 0.5px;
+    }
+    .portal-header-dark {
+      background: linear-gradient(180deg, #300000 0%, #150000 100%);
+      color: #ff9999;
+      font-weight: bold;
+      padding: 3px 6px;
+      border-bottom: 1px solid #660000;
+      text-shadow: 1px 1px 1px #000;
+    }
+    .btn-win98 {
+      background: #c0c0c0;
+      color: #000000;
+      border-top: 2px solid #ffffff;
+      border-left: 2px solid #ffffff;
+      border-right: 2px solid #505050;
+      border-bottom: 2px solid #505050;
+      font-size: 10px;
+      font-family: 'Tahoma', sans-serif;
+      padding: 1px 6px;
+      cursor: pointer;
+      text-decoration: none !important;
+      display: inline-block;
+      user-select: none;
+    }
+    .btn-win98:active {
+      border-top: 2px solid #505050;
+      border-left: 2px solid #505050;
+      border-right: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      padding: 2px 5px 0px 7px;
+    }
+    .btn-win98-dark {
+      background: #252528;
+      color: #dfdfdf;
+      border-top: 2px solid #555;
+      border-left: 2px solid #555;
+      border-right: 2px solid #111;
+      border-bottom: 2px solid #111;
+      font-size: 10px;
+      font-family: 'Tahoma', sans-serif;
+      padding: 1px 5px;
+      cursor: pointer;
+    }
+    .btn-win98-dark:hover {
+      background: #35353a;
+      color: #fff;
+    }
+  </style>
+<style data-purpose="banner-animations">
+    @keyframes retroBlink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .blink {
+      animation: retroBlink 0.9s infinite steps(1);
+    }
+    .fast-blink {
+      animation: retroBlink 0.35s infinite steps(1);
+    }
+    .hazard-stripe {
+      background: repeating-linear-gradient(
+        -45deg,
+        #000,
+        #000 10px,
+        #ffcc00 10px,
+        #ffcc00 20px
+      );
+    }
+    .hidden-whisper {
+      color: #1a1717;
+      user-select: text;
+    }
+    .hidden-whisper:hover {
+      color: #880000;
+    }
+    .scanline-bg {
+      background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%, 
+        rgba(0, 0, 0, 0.5) 50%
+      ), linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.03),
+        rgba(0, 255, 0, 0.01),
+        rgba(0, 0, 255, 0.03)
+      );
+      background-size: 100% 3px, 6px 100%;
+    }
+    /* Floating Draggable Popups */
+    .popup-window {
+      position: fixed;
+      z-index: 999;
+      box-shadow: 4px 4px 0px rgba(0,0,0,0.85);
+    }
+  </style>
+<!-- END: Custom Retro Styles -->
+</head>
+<body class="scanline-bg text-gray-200 min-h-screen">
+<!-- BEGIN: MasterContainer -->
+<div class="max-w-[1040px] mx-auto bg-[#0a0a0c] border-l-2 border-r-2 border-[#5a0000] shadow-[0_0_25px_rgba(150,0,0,0.65)] relative">
+<!-- BEGIN: TopBarNotice -->
+<section class="bg-[#180000] border-b border-[#700000] px-2 py-1 text-[10px] flex flex-wrap justify-between items-center text-gray-400" data-purpose="top-utility-bar">
+<div class="flex items-center flex-wrap gap-x-2 gap-y-0.5">
+<span class="text-red-500 font-bold">NODE: MNEMO-09</span>
+<span>|</span>
+<span class="text-gray-300">IP: 127.0.0.1 (LOCAL_CACHE_EXPIRED)</span>
+<span>|</span>
+<span class="text-yellow-400 font-bold">MIRROR: #03</span>
+<span>|</span>
+<span class="text-red-400">MEMORY: 94%</span>
+<span>|</span>
+<span class="text-[#ffff00]">SESSION: #004912</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="hidden-whisper">you were not supposed to find this.</span>
+<span class="text-gray-400">PORT: 8080 [OPEN]</span>
+<a class="text-[#ffff00] font-black bg-red-950 px-1 border border-yellow-400 hover:bg-yellow-300 hover:text-black" href="https://discord.com/users/764897741046153247" target="_blank">[!] FIND ME</a>
+</div>
+</section>
+<!-- END: TopBarNotice -->
+<!-- BEGIN: Top Vintage Banner Ads Row -->
+<div class="bg-black border-b border-[#550000] p-1 flex flex-wrap items-center justify-between gap-1 text-[10px]" data-purpose="vintage-banner-row">
+<div class="flex-1 min-w-[280px] bg-gradient-to-r from-yellow-300 via-amber-200 to-yellow-400 border border-black p-1 text-black flex items-center justify-between shadow-[2px_2px_0px_#333]">
+<div>
+<span class="bg-red-600 text-white font-black text-[9px] px-1 inline-block uppercase animate-pulse">*** PRIZE CLAIM ***</span>
+<p class="font-extrabold text-[11px] leading-tight text-red-950" id="ad-laptop-text">YOU HAVE WON AN iPAD / FREE LAPTOP!</p>
+<p class="text-[8px] text-gray-800">Geocities Verification code: #9931-CORRUPT</p>
+</div>
+<button class="btn-win98 font-bold !bg-red-600 !text-white text-[9px] py-1 px-1.5" onclick="triggerAdClick(this, 'WHY DID YOU CLICK THAT? THAT WAS NOT A PRIZE.')">CLAIM NOW!</button>
+</div>
+<div class="flex-1 min-w-[280px] bg-[#001144] border border-blue-400 p-1 text-white flex items-center justify-between shadow-[2px_2px_0px_#333]">
+<div>
+<span class="text-yellow-300 font-bold text-[9px] blink">100% FREE SCREENSAVER!</span>
+<p class="font-bold text-[10px] text-cyan-200 leading-tight" id="ad-matrix-text">FLYING 3D TOASTERS &amp; MATRIX CODE</p>
+<p class="text-[8px] text-gray-300">Compatible with Win95/98/ME/2000</p>
+</div>
+<button class="btn-win98 font-bold !bg-green-600 !text-white text-[9px] py-1 px-1.5" onclick="triggerAdClick(this, 'YOU DOWNLOADED NOTHING.')">INSTALL .EXE</button>
+</div>
+</div>
+<!-- END: Top Vintage Banner Ads Row -->
+<!-- BEGIN: MainHeader -->
+<header class="relative bg-gradient-to-b from-[#440000] via-[#1a0000] to-[#080808] border-b-2 border-[#800000] p-2.5" data-purpose="portal-header">
+<div class="flex flex-col md:flex-row items-center justify-between gap-2">
+<!-- Site Logo / WordArt Style -->
+<div class="text-center md:text-left">
+<div class="inline-block relative">
+<h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-widest text-[#ff2222] uppercase drop-shadow-[3px_3px_0px_#000000] font-['Arial_Black'] italic border-b-2 border-red-700 pb-1">
+              MNEMOPHOBIA
+            </h1>
+<span class="absolute -top-1 -right-6 bg-yellow-400 text-black text-[9px] font-black px-1.5 border border-black blink">
+              UNSTABLE MIRROR #03
+            </span>
+</div>
+<div class="text-[10px] text-gray-400 tracking-wider mt-1 code-font">
+            PERSONAL ARCHIVE // EST. 1999 // THE FEAR OF MEMORIES REMAINING
+          </div>
+<div class="text-[9px] text-[#992222] italic flex items-center gap-2">
+<span>"all forgotten things collect at the bottom of the magnetic disk."</span>
+<span class="hidden-whisper">you already opened this.</span>
+</div>
+</div>
+<!-- Leaderboard Retro Ad 468x60 (GameSpot Style) -->
+<div class="w-full md:w-[468px] h-[64px] bg-yellow-300 border-2 border-black p-1 flex items-center justify-between overflow-hidden shadow-[2px_2px_0px_#000] text-black" data-purpose="ad-banner-top">
+<div class="w-2/3 pr-1">
+<div class="bg-red-600 text-white font-black text-[10px] px-1 inline-block uppercase animate-pulse">
+              *** SYSTEM WARNING ***
+            </div>
+<p class="font-bold text-[11px] leading-tight text-red-950 mt-0.5" id="ad-header-warning">
+              YOUR MEMORY IS FULL! [PURGE NOW?]
+            </p>
+<p class="text-[9px] text-black leading-none">
+              94.2% bad sectors detected in subconscious cache.
+            </p>
+</div>
+<div class="w-1/3 flex flex-col items-center justify-center">
+<button class="btn-win98 font-bold text-center w-full !bg-red-600 !text-white !border-white text-[10px] py-1 shadow" onclick="triggerAdClick(this, 'YOU PURGED NOTHING. MEMORY PERMANENT.')">
+              DOWNLOAD FIX!
+            </button>
+<span class="text-[8px] text-gray-700 mt-0.5">[100% FREE SCAN]</span>
+</div>
+</div>
+</div>
+<!-- Navigation Toolbar / Strip -->
+<nav class="mt-2.5 bg-gradient-to-r from-[#2a0000] via-[#550000] to-[#2a0000] border border-[#a00000] p-1 flex flex-wrap items-center justify-center gap-1 text-[11px] font-bold" data-purpose="site-navigation-bar">
+<a class="text-white hover:bg-red-700 px-1.5 py-0.5" href="#welcome">[HOME]</a>
+<span class="text-red-400">|</span>
+<a class="text-white hover:bg-red-700 px-1.5 py-0.5" href="#recovered-files">[ARCHIVE]</a>
+<span class="text-red-400">|</span>
+<a class="text-white hover:bg-red-700 px-1.5 py-0.5" href="#lost-media">[FILES]</a>
+<span class="text-red-400">|</span>
+<a class="text-white hover:bg-red-700 px-1.5 py-0.5" href="#updates">[LOST PAGES]</a>
+<span class="text-red-400">|</span>
+<a class="text-yellow-300 hover:bg-red-700 px-1.5 py-0.5" href="#pentest-sec">[SECURITY / PENTEST]</a>
+<span class="text-red-400">|</span>
+<a class="text-white hover:bg-red-700 px-1.5 py-0.5" href="#guestbook">[GUESTBOOK]</a>
+<span class="text-red-400">|</span>
+<a class="text-red-300 hover:bg-red-700 px-1.5 py-0.5" href="#who-is-sec">[WHO IS MNEMOPHOBIA?]</a>
+<span class="text-red-400">|</span>
+<a class="text-cyan-300 hover:bg-red-700 px-1.5 py-0.5" href="#mirrors-sec">[MIRRORS]</a>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: Ticker / Marquee Banner -->
+<div class="bg-black border-b border-[#400000] px-2 py-0.5 flex items-center text-[10px]" data-purpose="news-marquee">
+<span class="bg-red-800 text-yellow-300 font-bold px-1.5 py-0.2 mr-2 uppercase border border-red-500 whitespace-nowrap">
+        BROADCAST:
+      </span>
+<marquee behavior="scroll" class="text-gray-300 code-font" direction="left" scrollamount="4">
+        +++ WARNING: THIS PAGE WAS DELETED IN 2001 +++ RESTORED FROM NETSCAPE CACHE +++ DO NOT CONTACT THE ORIGINAL HOST +++ RECOVERED CORRUPTED ENTRIES FROM CLUSTER 0x000F +++ THE ORIGINAL FILE WAS 14KB. WHY IS THIS COPY 31KB? +++ LAST SERVER REBOOT: 843 DAYS AGO +++ EMAIL: hannahloveskalilinux@vk.com +++ DISCORD: MNEMOPHOBIA +++ DO NOT REFRESH +++
+      </marquee>
+</div>
+<!-- END: Ticker / Marquee Banner -->
+<!-- BEGIN: MainContentGrid (Dense 3-Column 1999-2003 Layout) -->
+<main class="p-2 grid grid-cols-1 md:grid-cols-12 gap-2 bg-[#09090b]">
+<!-- ========================================================= -->
+<!-- BEGIN: Left Column (Ultra-Dense Claustrophobic Sidebar)   -->
+<!-- ========================================================= -->
+<aside class="md:col-span-3 space-y-2" data-purpose="left-sidebar">
+<!-- Navigation Box -->
+<div class="portal-box win-outset">
+<div class="portal-header flex justify-between items-center">
+<span>&gt; NAVIGATION</span>
+<span class="text-[8px] text-yellow-300">ROOT:/MNEMO</span>
+</div>
+<div class="p-1 bg-[#0c0c0e] space-y-1 font-mono text-[10px]">
+<ul class="space-y-0.5">
+<li><a class="text-gray-200 block hover:bg-red-950 px-1" href="#welcome">&gt; HOME</a></li>
+<li><a class="text-gray-200 block hover:bg-red-950 px-1" href="#who-is-sec">&gt; ABOUT ME</a></li>
+<li><a class="text-gray-200 block hover:bg-red-950 px-1" href="#recovered-files">&gt; ARCHIVE</a></li>
+<li><a class="text-gray-200 block hover:bg-red-950 px-1" href="#recovered-files">&gt; RECOVERED CACHE</a></li>
+<li><a class="text-gray-200 block hover:bg-red-950 px-1" href="#lost-media">&gt; PERSONAL FILES</a></li>
+<li><a class="text-gray-400 block hover:bg-red-950 px-1" href="#lost-media">&gt; LOST MEDIA <span class="text-red-500 text-[8px]">[404]</span></a></li>
+<li><a class="text-gray-400 block hover:bg-red-950 px-1" href="#recovered-files">&gt; DOWNLOADS <span class="text-yellow-500 text-[8px]">[DAMAGED]</span></a></li>
+<li><a class="text-gray-200 block hover:bg-red-950 px-1" href="#guestbook">&gt; GUESTBOOK</a></li>
+<li><a class="text-gray-200 block hover:bg-red-950 px-1" href="#webring">&gt; LINKS</a></li>
+<li><a class="text-yellow-300 block hover:bg-red-950 px-1" href="#pentest-sec">&gt; SECURITY / PENTEST LOG</a></li>
+<li><a class="text-red-400 block hover:bg-red-950 px-1" href="#mirrors-sec">&gt; MIRRORS <span class="text-red-500 text-[8px]">[ACCESS DENIED]</span></a></li>
+<li><a class="text-gray-400 block hover:bg-red-950 px-1" href="javascript:void(0)" onclick="openWinModal('INDEX_1999.HTM', '01:00 AM', 'ARCHIVE NOT FOUND. The 1999 original host machine was physically dismantled.')">&gt; OLD VERSION (1999)</a></li>
+<li class="pt-1 border-t border-red-900">
+<a class="text-red-500 font-bold block hover:bg-red-600 hover:text-black px-1 fast-blink" href="javascript:void(0)" onclick="triggerGlitchNotice()">
+                  &gt;&gt; DO NOT CLICK &lt;&lt;
+                </a>
+</li>
+<li><a class="text-gray-600 block hover:text-red-400 px-1" href="javascript:void(0)" onclick="openWinModal('CORRUPTED_SECTOR', '??:??', 'FILE CORRUPTED: THREE DIRECTORIES MISSING')">&gt; ??? [CORRUPTED]</a></li>
+</ul>
+</div>
+</div>
+<!-- Controls Box: Restore All Pop-ups -->
+<div class="portal-box p-1 text-center bg-[#151518]">
+<button class="btn-win98 font-bold !bg-yellow-400 !text-black w-full text-[9px] py-1 border border-black" onclick="restorePopups()">
+            ⚡ RESTORE SYSTEM POP-UPS ⚡
+          </button>
+<span class="text-[8px] text-gray-400">Reopen all classic OS alert dialogues</span>
+</div>
+<!-- Ad Box: 56K Dial-Up -->
+<div class="win-outset bg-[#000080] p-1.5 text-center text-white border-2 border-white shadow" data-purpose="retro-ad-dialup">
+<div class="text-[9px] uppercase font-bold text-yellow-300 blink">LIMITED TIME OFFER!</div>
+<div class="text-xs font-black tracking-tighter">FREE 56K DIAL-UP!</div>
+<div class="text-[9px] text-gray-200 mt-0.5">NO CREDIT CARD REQUIRED. CONNECT DIRECTLY TO MNEMOPHOBIA NODE.</div>
+<div class="my-1 bg-white text-black text-[10px] font-bold p-0.5 border border-black font-mono">
+            DIAL: 1-800-MNEMO-0
+          </div>
+<a class="btn-win98 font-bold !text-[9px] w-full" href="https://discord.com/users/764897741046153247" target="_blank">
+            CONNECT NOW
+          </a>
+</div>
+<!-- Under Construction Widget -->
+<div class="portal-box p-1 text-center bg-[#141416]">
+<div class="hazard-stripe h-2.5 w-full border border-black mb-1"></div>
+<span class="text-[10px] font-black text-yellow-400 tracking-wider">UNDER CONSTRUCTION</span>
+<div class="text-[8px] text-gray-400">LAST SYNC: 14-AUG-2001 (MIRROR #03)</div>
+<div class="hazard-stripe h-2.5 w-full border border-black mt-1"></div>
+</div>
+<!-- Ad Box: Psychological Banner -->
+<div class="win-outset bg-black p-2 border-2 border-red-700 text-center">
+<div class="text-red-600 text-xs font-black uppercase">
+            REMEMBER?
+          </div>
+<div class="text-[9px] text-gray-300 italic my-1">
+            "You left something behind in 1999. It is still waiting."
+          </div>
+<a class="inline-block bg-red-900 hover:bg-red-700 text-yellow-200 text-[9px] font-bold px-2 py-0.5 border border-yellow-500" href="mailto:hannahloveskalilinux@vk.com">
+            [CLICK TO REMEMBER]
+          </a>
+</div>
+<!-- Avalanche of 88x31 Badges in Sidebar -->
+<div class="portal-box p-1 text-center bg-[#070708]">
+<div class="text-[8px] text-gray-400 font-bold mb-1 border-b border-gray-800 pb-0.5 uppercase tracking-wider">NET RINGS &amp; BADGES</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[88px] h-[31px] win-outset bg-[#008080] text-[8px] text-white flex flex-col items-center justify-center font-bold leading-tight">
+<span>NETSCAPE</span><span class="text-yellow-300 text-[6px]">NOW 4.0</span>
+</div>
+<div class="w-[88px] h-[31px] win-outset bg-[#c0c0c0] text-black font-bold text-[7px] flex flex-col items-center justify-center leading-none">
+<span>MADE WITH</span><span class="font-black text-blue-900 text-[8px]">NOTEPAD</span>
+</div>
+<div class="w-[88px] h-[31px] win-outset bg-red-950 text-white font-bold text-[7px] flex flex-col items-center justify-center leading-none border border-red-600">
+<span>NO FRAMES</span><span class="text-yellow-300 text-[6px]">VERIFIED</span>
+</div>
+<div class="w-[88px] h-[31px] win-outset bg-green-950 text-green-300 font-bold text-[7px] flex flex-col items-center justify-center leading-none border border-green-600">
+<span>BEST VIEWED</span><span class="text-white text-[7px]">800x600</span>
+</div>
+<div class="w-[88px] h-[31px] win-outset bg-[#1a0033] text-purple-300 font-bold text-[7px] flex flex-col items-center justify-center leading-none border border-purple-600">
+<span>MIDI SOUND</span><span class="text-yellow-400 text-[6px]">ENABLED [ON]</span>
+</div>
+<div class="w-[88px] h-[31px] win-outset bg-[#330000] text-red-300 font-bold text-[7px] flex flex-col items-center justify-center leading-none border border-red-500">
+<span>1024x768</span><span class="text-white text-[6px]">SUCKS!</span>
+</div>
+<div class="w-[88px] h-[31px] win-outset bg-black border border-gray-600 flex items-center justify-center p-0.5">
+<div class="text-[7px] font-mono text-gray-400 flex items-center gap-0.5">
+<span class="text-red-500">☒</span> BROKEN_IMG
+              </div>
+</div>
+<div class="w-[88px] h-[31px] win-outset bg-[#000040] text-cyan-200 font-bold text-[7px] flex flex-col items-center justify-center leading-none">
+<span>MIDNIGHT</span><span class="text-yellow-300 text-[6px]">WEBRING 2000</span>
+</div>
+</div>
+</div>
+<!-- Webmaster Info Box -->
+<div class="p-1.5 bg-[#120000] border border-[#600000] text-[9px] text-gray-400 text-center font-mono">
+<div>WEBMASTER: <span class="text-red-400 font-bold">MNEMOPHOBIA</span></div>
+<div>INQUIRIES: <a class="text-yellow-400 underline" href="mailto:hannahloveskalilinux@vk.com">hannahloveskalilinux@vk.com</a></div>
+<div>SERVER PING: <span class="text-red-500 blink font-bold">TIMEOUT</span></div>
+<div class="text-gray-500 mt-1">mirror #3 - page edited after deletion</div>
+<div class="hidden-whisper text-[8px] mt-0.5">someone is reading this.</div>
+</div>
+</aside>
+<!-- END: Left Column -->
+<!-- ========================================================= -->
+<!-- BEGIN: Center Column (Core Heavy Archive Directory)       -->
+<!-- ========================================================= -->
+<section class="md:col-span-6 space-y-2" data-purpose="center-main-content">
+<!-- Warning Tape Header -->
+<div class="p-1.5 bg-black border-2 border-red-600 text-center">
+<div class="text-yellow-400 font-black text-[10px] tracking-wider uppercase animate-pulse">
+            THIS PAGE WAS DELETED IN 2001. ARCHIVE COPY — DO NOT DISTRIBUTE.
+          </div>
+<div class="text-[9px] text-gray-300">
+            THIS IS NOT THE ORIGINAL VERSION. THE ORIGINAL FILE WAS 14KB. WHY IS THIS COPY 31KB?
+          </div>
+<div class="text-[8px] text-red-500 italic mt-0.5">
+            LAST KNOWN OWNER: MNEMOPHOBIA // OWNER STATUS: UNKNOWN
+          </div>
+</div>
+<!-- CAIXA 1: Welcome to Mnemophobia -->
+<article class="portal-box win-outset" id="welcome">
+<div class="portal-header flex justify-between items-center">
+<span>&gt;&gt; WELCOME TO MNEMOPHOBIA</span>
+<span class="text-[9px] text-red-200">ID: 001-A</span>
+</div>
+<div class="p-2.5 bg-[#0e0a0a] text-gray-200 space-y-2 text-[11px] leading-relaxed font-sans">
+<p>
+              Welcome to my little corner of the internet. I used to remember everything. Now I only remember this website.
+            </p>
+<p class="text-gray-300">
+              Please do not delete anything. If you are reading this, someone forgot to turn off the server. The drives continue spinning in an empty room. The fan noise is loud, but nobody is around to hear it. The person who maintained this page is no longer responding.
+            </p>
+<div class="bg-[#1f0505] p-2 border-l-2 border-red-600 text-[10px] text-yellow-200 code-font">
+              NOTICE: If you recognize any of the photographs or audio waveforms cataloged below, please reach out via <a class="text-white underline font-bold" href="https://discord.com/users/764897741046153247" target="_blank">DISCORD (MNEMOPHOBIA)</a> or submit your claim to <a class="text-white underline font-bold" href="mailto:hannahloveskalilinux@vk.com">hannahloveskalilinux@vk.com</a>.
+            </div>
+<div class="text-[9px] text-gray-500 italic flex justify-between pt-1 border-t border-gray-800">
+<span>HOST: Apache/1.3.12 (Unix) mod_ssl/2.6.6</span>
+<span class="hidden-whisper">you are not the first person here.</span>
+</div>
+</div>
+</article>
+<!-- CAIXA 2: System Telemetry / Last Updated -->
+<article class="portal-box win-outset">
+<div class="portal-header flex justify-between items-center">
+<span>&gt;&gt; SYSTEM STATUS // TELEMETRY</span>
+<span class="text-[9px] bg-red-950 px-1 border border-red-500 text-yellow-300">LIVE DUMP</span>
+</div>
+<div class="p-2 bg-[#0a0a0c] grid grid-cols-2 sm:grid-cols-4 gap-1.5 text-center font-mono">
+<div class="bg-black p-1.5 border border-[#333]">
+<div class="text-[8px] text-gray-400 uppercase">LAST UPDATED</div>
+<div class="text-[11px] text-red-500 font-bold">08/14/2001</div>
+</div>
+<div class="bg-black p-1.5 border border-[#333]">
+<div class="text-[8px] text-gray-400 uppercase">VISITORS</div>
+<div class="text-[11px] text-yellow-400 font-bold tracking-widest bg-[#151515] border border-black px-1" id="visitor-counter">
+                000013
+              </div>
+</div>
+<div class="bg-black p-1.5 border border-[#333]">
+<div class="text-[8px] text-gray-400 uppercase">ONLINE NOW</div>
+<div class="text-[11px] text-green-400 font-bold">1 (YOU)</div>
+</div>
+<div class="bg-black p-1.5 border border-[#333]">
+<div class="text-[8px] text-gray-400 uppercase">SERVER TIME</div>
+<div class="text-[11px] text-red-400 font-bold">03:17 AM</div>
+</div>
+</div>
+</article>
+<!-- Gaudy Interactive Banner -->
+<div class="w-full bg-[#ffeedd] border-2 border-black p-1 flex items-center justify-between text-black shadow" data-purpose="banner-commercial-weird">
+<div class="w-8/12">
+<div class="font-black text-xs text-blue-900 leading-none">
+              YOU HAVE WON $1,000,000!
+            </div>
+<div class="text-[9px] text-gray-700 leading-tight mt-0.5">
+              Claim your prize or chat with thousands of lonely singles online!
+            </div>
+<div class="text-[8px] text-red-600 font-bold">100% VERIFIED BY GEOCITIES WEB MONITOR</div>
+</div>
+<div class="w-4/12 text-right">
+<button class="btn-win98 font-bold !bg-green-700 !text-white text-[9px] px-2 py-1 shadow" onclick="triggerAdClick(this, 'THERE IS NO ONE HERE.')">
+              CLICK HERE!
+            </button>
+</div>
+</div>
+<!-- CAIXA 3: Recovered Files (Interactive Quick Launch FAT32) -->
+<article class="portal-box win-outset" id="recovered-files">
+<div class="portal-header flex justify-between items-center">
+<span>&gt;&gt; RECOVERED FILES [CORRUPTED FAT32]</span>
+<span class="text-[9px] text-yellow-300">CLICK ITEM TO MOUNT</span>
+</div>
+<div class="p-2 bg-[#08080a]">
+<p class="text-[10px] text-gray-400 mb-1.5">
+              Clicking damaged nodes triggers a local read attempt from sector cache:
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-1 text-[10px] font-mono">
+<button class="btn-win98 text-left !bg-[#1c1c1f] !text-gray-200 !border-[#444] hover:!border-red-500 p-1 flex items-center gap-1" onclick="openWinModal('FILE_001.JPG', '03:17 AM', 'Damaged JPEG header. The face in the center of the frame contains 0 byte entropy.')">
+<span class="text-yellow-500">📁</span> FILE_001.JPG
+              </button>
+<button class="btn-win98 text-left !bg-[#1c1c1f] !text-gray-200 !border-[#444] hover:!border-red-500 p-1 flex items-center gap-1" onclick="openWinModal('FILE_002.BMP', '03:17 AM', 'Uncompressed bitmap file. Color depth shifted entirely into dark magenta spectrum.')">
+<span class="text-blue-400">🖼️</span> FILE_002.BMP
+              </button>
+<button class="btn-win98 text-left !bg-[#1c1c1f] !text-gray-200 !border-[#444] hover:!border-red-500 p-1 flex items-center gap-1" onclick="openWinModal('FILE_003.TXT', '03:17 AM', 'TXT: \'I told them not to leave the magnetic tapes near the power transformer. Now it won\'t stop looping.\'')">
+<span class="text-gray-400">📄</span> FILE_003.TXT
+              </button>
+<button class="btn-win98 text-left !bg-[#1c1c1f] !text-gray-200 !border-[#444] hover:!border-red-500 p-1 flex items-center gap-1" onclick="openWinModal('FILE_004.MID', '03:17 AM', 'General MIDI score. 4 channels playing repeated root notes at 32 BPM. Audio output disabled.')">
+<span class="text-green-500">🎵</span> FILE_004.MID
+              </button>
+<button class="btn-win98 text-left !bg-[#1c1c1f] !text-gray-200 !border-[#444] hover:!border-red-500 p-1 flex items-center gap-1" onclick="openWinModal('FILE_005.WAV', '03:17 AM', 'WAV: High-amplitude carrier tone recorded over standard 11kHz dialup handshake tone.')">
+<span class="text-red-400">🔊</span> FILE_005.WAV
+              </button>
+<button class="btn-win98 text-left !bg-[#1c1c1f] !text-gray-200 !border-[#444] hover:!border-red-500 p-1 flex items-center gap-1" onclick="openWinModal('FILE_006.HTM', '03:17 AM', 'Dead mirror clone. Contains 4,000 empty &lt;table&gt; cells with no closing tags.')">
+<span class="text-yellow-300">🌐</span> FILE_006.HTM
+              </button>
+<button class="btn-win98 text-left !bg-[#2a0505] !text-red-300 !border-red-600 hover:!border-yellow-400 p-1 flex items-center gap-1 col-span-2 sm:col-span-3" onclick="openWinModal('FILE_007.BAK', '03:17 AM', 'CRITICAL ERROR: THIS FILE WAS NOT HERE BEFORE. ACCESS IS BEING MONITORED.')">
+<span class="text-red-500 font-bold">⚠️</span> FILE_007.BAK — [WARNING: THIS FILE WAS NOT HERE BEFORE]
+              </button>
+</div>
+</div>
+</article>
+<!-- CAIXA 4: Full Recovered Deep Master Archive Table -->
+<article class="portal-box win-outset" id="lost-media">
+<div class="portal-header flex justify-between items-center">
+<span>&gt;&gt; MNEMOPHOBIA // RECOVERED ARCHIVE MASTER DIRECTORY</span>
+<span class="text-[9px] text-gray-300">SYS_V.2.04</span>
+</div>
+<div class="p-1 bg-[#09090b] overflow-x-auto">
+<table class="w-full text-left text-[10px] border-collapse font-mono">
+<thead>
+<tr class="bg-[#2b0000] text-gray-200 border-b border-[#5a0000]">
+<th class="p-1 border-r border-[#400000]">FILENAME</th>
+<th class="p-1 border-r border-[#400000]">DATE</th>
+<th class="p-1 border-r border-[#400000]">SIZE</th>
+<th class="p-1 border-r border-[#400000]">FORMAT</th>
+<th class="p-1 border-r border-[#400000]">CONDITION</th>
+<th class="p-1">SOURCE</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#1e1e24]">
+<tr class="hover:bg-[#1a0a0a] cursor-pointer" onclick="openWinModal('IMG_0001.JPG', '1999-11-04', 'Damaged film scan / exposure zero. Recovered from Geocities.')">
+<td class="p-1 font-bold text-gray-200 border-r border-[#222]">IMG_0001.JPG</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">1999-11-04</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">184 KB</td>
+<td class="p-1 text-gray-300 border-r border-[#222]">JPEG</td>
+<td class="p-1 border-r border-[#222]">
+<span class="bg-yellow-900 text-yellow-200 px-1 py-0.2 text-[8px] font-bold border border-yellow-500">[PARTIAL]</span>
+</td>
+<td class="p-1 text-gray-400">GEOCITIES MIRROR</td>
+</tr>
+<tr class="hover:bg-[#1a0a0a] cursor-pointer" onclick="openWinModal('VOICE01.WAV', '2000-02-17', 'Audio tape digitized with high hiss. Frequency spike 432Hz sustained.')">
+<td class="p-1 font-bold text-gray-200 border-r border-[#222]">VOICE01.WAV</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">2000-02-17</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">2.4 MB</td>
+<td class="p-1 text-gray-300 border-r border-[#222]">WAV</td>
+<td class="p-1 border-r border-[#222]">
+<span class="bg-red-950 text-red-300 px-1 py-0.2 text-[8px] font-bold border border-red-600">[CORRUPTED]</span>
+</td>
+<td class="p-1 text-gray-400">UNKNOWN</td>
+</tr>
+<tr class="hover:bg-[#1a0a0a] cursor-pointer" onclick="openWinModal('PAGE_OLD.HTM', '2000-06-03', 'Recovered HTML layout from Netscape 4.0 cache directory.')">
+<td class="p-1 font-bold text-gray-200 border-r border-[#222]">PAGE_OLD.HTM</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">2000-06-03</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">31 KB</td>
+<td class="p-1 text-gray-300 border-r border-[#222]">HTML</td>
+<td class="p-1 border-r border-[#222]">
+<span class="bg-green-950 text-green-300 px-1 py-0.2 text-[8px] font-bold border border-green-600">[RECOVERED]</span>
+</td>
+<td class="p-1 text-gray-400">NETSCAPE CACHE</td>
+</tr>
+<tr class="hover:bg-[#1a0a0a] cursor-pointer" onclick="openWinModal('CHATLOG.TXT', '2000-09-11', 'Chatlog snippet: \'Why did you stop replying to ICQ?\'')">
+<td class="p-1 font-bold text-gray-200 border-r border-[#222]">CHATLOG.TXT</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">2000-09-11</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">8 KB</td>
+<td class="p-1 text-gray-300 border-r border-[#222]">TXT</td>
+<td class="p-1 border-r border-[#222]">
+<span class="bg-yellow-900 text-yellow-200 px-1 py-0.2 text-[8px] font-bold border border-yellow-500">[PARTIAL]</span>
+</td>
+<td class="p-1 text-gray-400">LOCAL MIRROR</td>
+</tr>
+<tr class="hover:bg-[#1a0a0a] cursor-pointer" onclick="openWinModal('IMAGE_17.BMP', '2001-01-04', 'Raw uncompressed bitmap with inverted red chroma channels.')">
+<td class="p-1 font-bold text-gray-200 border-r border-[#222]">IMAGE_17.BMP</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">2001-01-04</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">612 KB</td>
+<td class="p-1 text-gray-300 border-r border-[#222]">BMP</td>
+<td class="p-1 border-r border-[#222]">
+<span class="bg-orange-950 text-orange-300 px-1 py-0.2 text-[8px] font-bold border border-orange-600">[DAMAGED]</span>
+</td>
+<td class="p-1 text-gray-400">UNKNOWN</td>
+</tr>
+<tr class="hover:bg-[#1a0a0a] cursor-pointer" onclick="openWinModal('MNEMO.BAK', '2001-08-14', 'CRITICAL ERROR: ACCESS DENIED: THREE DIRECTORIES MISSING')">
+<td class="p-1 font-bold text-gray-200 border-r border-[#222]">MNEMO.BAK</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">2001-08-14</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">4 KB</td>
+<td class="p-1 text-gray-300 border-r border-[#222]">BAK</td>
+<td class="p-1 border-r border-[#222]">
+<span class="bg-purple-950 text-purple-300 px-1 py-0.2 text-[8px] font-bold border border-purple-600">[LOCKED]</span>
+</td>
+<td class="p-1 text-gray-400">UNKNOWN</td>
+</tr>
+<tr class="hover:bg-[#1a0a0a] cursor-pointer" onclick="openWinModal('INDEX_OLD.HTM', '1999-03-19', 'THE REQUESTED MEMORY COULD NOT BE LOCATED.')">
+<td class="p-1 font-bold text-gray-400 border-r border-[#222]">INDEX_OLD.HTM</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">1999-03-19</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">12 KB</td>
+<td class="p-1 text-gray-400 border-r border-[#222]">HTML</td>
+<td class="p-1 border-r border-[#222]">
+<span class="bg-gray-800 text-gray-400 px-1 py-0.2 text-[8px] font-bold border border-gray-600">[MISSING]</span>
+</td>
+<td class="p-1 text-gray-500">ARCHIVE</td>
+</tr>
+<tr class="hover:bg-[#200000] bg-[#140000] cursor-pointer" onclick="openWinModal('???', '2001-??', 'CRITICAL ALERT: THIS FILE WAS NOT HERE BEFORE. DO NOT OPEN.')">
+<td class="p-1 font-black text-red-500 border-r border-[#400]">???</td>
+<td class="p-1 text-red-400 border-r border-[#400]">2001-??</td>
+<td class="p-1 text-red-400 border-r border-[#400]">???</td>
+<td class="p-1 text-red-400 border-r border-[#400]">???</td>
+<td class="p-1 border-r border-[#400]">
+<span class="bg-red-800 text-white px-1 py-0.2 text-[8px] font-bold border border-red-500">[UNKNOWN]</span>
+</td>
+<td class="p-1 text-yellow-300 font-bold blink">DO NOT OPEN</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-1 bg-[#100b0b] text-[9px] text-gray-400 flex justify-between items-center">
+<span>Click any row to execute raw sector fetch</span>
+<span class="text-red-400 font-bold">TOTAL ENTRIES: 8 (1 LETHAL)</span>
+</div>
+</article>
+<!-- SECTION: ARCHIVE MIRRORS -->
+<article class="portal-box win-outset" id="mirrors-sec">
+<div class="portal-header flex justify-between items-center">
+<span>&gt;&gt; ARCHIVE MIRRORS CLUSTER STATUS</span>
+<span class="text-[9px] text-yellow-300">FAILOVER ACTIVE</span>
+</div>
+<div class="p-2 bg-[#0c0c0e] space-y-1.5 font-mono text-[10px]">
+<div class="flex items-center justify-between p-1 bg-[#141418] border border-gray-800">
+<span class="text-gray-300 font-bold">MIRROR #01 — PRIMARY NODE (CALIFORNIA)</span>
+<span class="text-red-500 font-bold">[TIMED OUT]</span>
+</div>
+<div class="flex items-center justify-between p-1 bg-[#141418] border border-gray-800">
+<span class="text-gray-300 font-bold">MIRROR #02 — GEOCITIES SATELLITE</span>
+<span class="text-red-400 font-bold">[HOST NOT FOUND]</span>
+</div>
+<div class="flex items-center justify-between p-1 bg-[#200000] border-2 border-red-600">
+<span class="text-yellow-300 font-bold">MIRROR #03 — CORRUPTED FAT32 DUMP</span>
+<span class="text-green-400 font-black animate-pulse">[YOU ARE CURRENTLY VIEWING THIS MIRROR]</span>
+</div>
+<div class="flex items-center justify-between p-1 bg-[#141418] border border-gray-800">
+<span class="text-gray-300 font-bold">MIRROR #04 — EUROPEAN BACKUP NODE</span>
+<span class="text-gray-500 font-bold">[ARCHIVE TERMINATED]</span>
+</div>
+<div class="flex items-center justify-between p-1 bg-[#160010] border border-purple-800">
+<span class="text-purple-300 font-bold">MIRROR #05 — UNIDENTIFIED REPLICA</span>
+<span class="text-yellow-400 text-[9px]">[NOT AVAILABLE IN ORIGINAL ARCHIVE]</span>
+</div>
+</div>
+</article>
+<!-- SECTION: WHO IS MNEMOPHOBIA? (Damaged Personal Profile) -->
+<article class="portal-box win-outset" id="who-is-sec">
+<div class="portal-header flex justify-between items-center">
+<span>&gt;&gt; WHO IS MNEMOPHOBIA? // PROFILE FRAGMENT</span>
+<span class="text-[9px] text-red-300">USER_DATA_EXP</span>
+</div>
+<div class="p-2 bg-[#0e0c0c] space-y-2 text-[10px] font-mono">
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-1 bg-[#151515] p-2 border border-gray-700">
+<div><span class="text-gray-400">NAME:</span> <span class="text-red-400 font-bold">MNEMOPHOBIA</span></div>
+<div><span class="text-gray-400">AGE:</span> <span class="text-gray-200">[REDACTED]</span></div>
+<div><span class="text-gray-400">LOCATION:</span> <span class="text-gray-200">UNKNOWN</span></div>
+<div><span class="text-gray-400">ICQ:</span> <span class="text-red-500 font-bold">[OFFLINE]</span></div>
+<div><span class="text-gray-400">EMAIL:</span> <a class="text-yellow-300 underline" href="mailto:hannahloveskalilinux@vk.com">hannahloveskalilinux@vk.com</a></div>
+<div><span class="text-gray-400">LAST SEEN:</span> <span class="text-red-400 font-bold">08/14/2001</span></div>
+<div class="col-span-2 sm:col-span-3 text-[9px] text-gray-500 pt-1 border-t border-gray-800">
+STATUS: <span class="text-yellow-300 font-bold blink">UNKNOWN (COMMUNICATION LOST)</span>
+</div>
+</div>
+<div class="p-2 bg-[#120808] border-l-2 border-red-600 text-gray-300 leading-relaxed font-sans text-[11px]">
+<p class="font-bold text-red-400 font-mono text-[10px] mb-1">&gt; AUTOBIOGRAPHICAL EXCERPT [RECOVERED WITH ERRORS]:</p>
+<p class="italic text-gray-300">
+              "I started this page because I was afraid of forgetting... [TEXT RECOVERED FROM DAMAGED COPY] ...every time I turn around, the streetlights outside my window switch off in sequence. Why does everyone keep saying they saw me yesterday?"
+            </p>
+<div class="mt-2 text-right">
+<a class="btn-win98 font-bold !bg-red-800 !text-white text-[9px]" href="https://discord.com/users/764897741046153247" target="_blank">
+                CHAT ON DISCORD &gt;&gt;
+              </a>
+</div>
+</div>
+</div>
+</article>
+<!-- SECTION: WEBMASTER / SECURITY NOTES (PENTEST ARCHIVE) -->
+<article class="portal-box win-outset" id="pentest-sec">
+<div class="portal-header flex justify-between items-center">
+<span>&gt;&gt; WEBMASTER / SECURITY NOTES (PENTEST ARCHIVE)</span>
+<span class="text-[9px] text-yellow-300">SECOP-LOG</span>
+</div>
+<div class="p-2 bg-[#09090c] space-y-2 font-mono text-[10px]">
+<p class="text-gray-400 text-[9px]">
+            Security audits and vulnerability reports logged before node cutoff:
+          </p>
+<div class="space-y-1">
+<div class="p-1 bg-[#141416] border-l-2 border-green-500">
+<span class="text-green-400 font-bold">[PENTEST REQUEST #001]</span> TARGET: OLD-MIRROR-01 | STATUS: <span class="text-gray-400">CLOSED</span> | NOTE: <span class="text-gray-300">"host stopped responding"</span>
+</div>
+<div class="p-1 bg-[#141416] border-l-2 border-yellow-500">
+<span class="text-yellow-400 font-bold">[PENTEST REQUEST #002]</span> TARGET: UNKNOWN | STATUS: <span class="text-yellow-300">ABANDONED</span> | NOTE: <span class="text-gray-300">"request denied by administrator"</span>
+</div>
+<div class="p-1 bg-[#141416] border-l-2 border-red-500">
+<span class="text-red-400 font-bold">[PENTEST REQUEST #003]</span> TARGET: MNEMO-ARCHIVE | STATUS: <span class="text-red-400">INCOMPLETE</span> | NOTE: <span class="text-red-300 font-bold blink">"do not continue"</span>
+</div>
+<div class="p-1 bg-[#180a0a] border-l-2 border-cyan-500">
+<span class="text-cyan-400 font-bold">[PENTEST REQUEST #004]</span> TARGET: LOCAL CACHE | STATUS: <span class="text-green-400">RECOVERED</span> | NOTE: <span class="text-gray-300">"three directories missing"</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 pt-1 border-t border-gray-800">
+<a class="btn-win98 font-bold !text-[9px] !bg-yellow-400 !text-black" href="mailto:hannahloveskalilinux@vk.com">
+              [SUBMIT PENTEST REQUEST]
+            </a>
+<a class="btn-win98 font-bold !text-[9px] !bg-gray-300 !text-black" href="mailto:hannahloveskalilinux@vk.com">
+              [SECURITY CONTACT]
+            </a>
+<a class="btn-win98 font-bold !text-[9px] !bg-red-700 !text-white" href="mailto:hannahloveskalilinux@vk.com">
+              [REPORT A VULNERABILITY]
+            </a>
+</div>
+</div>
+</article>
+<!-- CAIXA 5: Sign My Guestbook -->
+<article class="portal-box win-outset" id="guestbook">
+<div class="portal-header flex justify-between items-center">
+<span>&gt;&gt; SIGN MY GUESTBOOK // PERSISTENT LOG</span>
+<span class="text-[9px] text-gray-300">TOTAL POSTS: 8</span>
+</div>
+<div class="p-2 bg-[#0c0c0e] space-y-2">
+<!-- Guestbook entries -->
+<div class="space-y-1 font-mono text-[10px]">
+<div class="bg-[#141416] p-1 border-l-2 border-blue-500">
+<span class="text-blue-400 font-bold">"cool site"</span> — anonymous <span class="text-gray-500">(09/12/2000)</span>
+</div>
+<div class="bg-[#141416] p-1 border-l-2 border-yellow-500">
+<span class="text-yellow-300 font-bold">"who are you? why won't you answer my ICQ?"</span> — mike <span class="text-gray-500">(11/04/2000)</span>
+</div>
+<div class="bg-[#141416] p-1 border-l-2 border-purple-500">
+<span class="text-purple-300">"why is this page still online?"</span> — tracer <span class="text-gray-500">(03/22/2001)</span>
+</div>
+<div class="bg-[#141416] p-1 border-l-2 border-red-500">
+<span class="text-red-400 font-bold">"please delete this before they find it"</span> — h. <span class="text-gray-500">(07/01/2001)</span>
+</div>
+<div class="bg-[#180a0a] p-1 border-l-2 border-red-600">
+<span class="text-yellow-200">"you said you deleted it"</span> — anonymous <span class="text-gray-500">(08/14/2001)</span>
+</div>
+<div class="bg-[#1a0808] p-1 border-l-2 border-red-700">
+<span class="text-red-400 font-bold">"who is posting as me?"</span> — [USER UNKNOWN] <span class="text-[8px] text-yellow-500">[RECOVERED FROM CACHE]</span>
+</div>
+<div class="bg-[#180000] p-1 border-l-2 border-gray-600">
+<span class="text-gray-300 italic">"i never signed this."</span> — [IP UNAVAILABLE]
+</div>
+<div class="bg-[#240000] p-1 border-l-2 border-red-600">
+<span class="text-red-500 font-bold italic blink">"stop changing the page"</span> — [ENTRY DELETED BY HOST]
+</div>
+</div>
+<!-- Fake Guestbook Input Form -->
+<form class="bg-[#141416] p-2 border border-[#333] space-y-1.5" onsubmit="event.preventDefault(); alert('ERROR: GUESTBOOK STORAGE DEVICE DISCONNECTED (READ-ONLY FAT32 FS)');">
+<div class="text-[9px] font-bold text-gray-300 uppercase">LEAVE A MESSAGE IN PERPETUITY:</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-1 text-[10px]">
+<input class="bg-black text-gray-200 border border-gray-600 p-1 text-[10px] focus:outline-none" placeholder="Name / Handle" required="" type="text"/>
+<input class="bg-black text-gray-200 border border-gray-600 p-1 text-[10px] focus:outline-none" placeholder="ICQ # / Email" type="text"/>
+</div>
+<textarea class="w-full bg-black text-gray-200 border border-gray-600 p-1 text-[10px] focus:outline-none" placeholder="Your permanent message..." required="" rows="2"></textarea>
+<div class="flex justify-between items-center">
+<span class="text-[8px] text-gray-500">HTML tags will be stripped</span>
+<button class="btn-win98 font-bold !bg-[#c0c0c0] !text-black" type="submit">
+                  [ SUBMIT ENTRY ]
+                </button>
+</div>
+</form>
+</div>
+</article>
+</section>
+<!-- END: Center Column -->
+<!-- ========================================================= -->
+<!-- BEGIN: Right Column (Updates, Ads & Interactive Madness)  -->
+<!-- ========================================================= -->
+<aside class="md:col-span-3 space-y-2" data-purpose="right-sidebar">
+<!-- Latest Updates Box (Chronological Fragmentation) -->
+<div class="portal-box win-outset" id="updates">
+<div class="portal-header flex justify-between items-center">
+<span>&gt; LATEST UPDATES</span>
+<span class="text-[8px] text-gray-300">LOG_HIST</span>
+</div>
+<div class="p-1.5 bg-[#0b0b0e] font-mono text-[10px] space-y-1">
+<div class="border-b border-[#202025] pb-1">
+<span class="text-red-400 font-bold">1999</span>
+<p class="text-gray-300">personal homepage created on Apache node.</p>
+</div>
+<div class="border-b border-[#202025] pb-1">
+<span class="text-red-400 font-bold">2000</span>
+<p class="text-gray-300">photo archive &amp; guestbook opened.</p>
+</div>
+<div class="border-b border-[#202025] pb-1">
+<span class="text-red-400 font-bold">2001</span>
+<p class="text-gray-300">chat log archived. site owner reported missing.</p>
+</div>
+<div class="border-b border-[#202025] pb-1">
+<span class="text-red-400 font-bold">2002</span>
+<p class="text-gray-300">mirror #03 created from stale cached drive.</p>
+</div>
+<div class="border-b border-[#202025] pb-1">
+<span class="text-red-400 font-bold">2003</span>
+<p class="text-gray-300">last known automated backup sweep.</p>
+</div>
+<div class="bg-[#1c0000] p-1 border border-red-700">
+<span class="text-yellow-400 font-bold blink">[date error]</span>
+<p class="text-red-300 font-bold leading-tight">someone is still here.</p>
+</div>
+</div>
+</div>
+<!-- Gaudy 1998-2004 Ad Banner: Lose Weight / Ringtone -->
+<div class="win-outset bg-yellow-300 text-black p-1 text-center font-bold" data-purpose="ad-popup-mini">
+<div class="text-[8px] bg-black text-yellow-300 uppercase py-0.5">EXCLUSIVE PROMOTION</div>
+<div class="text-[10px] font-black text-red-700 mt-1">FREE NOKIA POLYPHONIC RINGTONES!</div>
+<div class="text-[8px] text-gray-800">DOWNLOAD CRAZY FROG &amp; EMINEM MIDI</div>
+<button class="btn-win98 !bg-blue-800 !text-white text-[9px] w-full mt-1" onclick="triggerAdClick(this, 'NO AUDIO HARDWARE FOUND.')">SEND TO CELLPHONE</button>
+</div>
+<!-- Gaudy Ad Banner: Antivirus -->
+<div class="win-outset bg-[#002200] border-2 border-green-500 text-white p-1.5 text-center" data-purpose="ad-antivirus">
+<div class="text-[9px] font-bold text-yellow-300 blink">*** YOUR PC MAY BE INFECTED ***</div>
+<div class="text-[10px] font-bold text-green-300 mt-0.5">38 TROJANS DETECTED IN RAM!</div>
+<p class="text-[8px] text-gray-300 my-1">Download Antivirus Pro 2002 now to disinfect system registry.</p>
+<button class="btn-win98 font-bold !bg-green-600 !text-white w-full text-[9px] py-1" onclick="triggerAdClick(this, 'YOU DOWNLOADED NOTHING.')">DOWNLOAD FREE ANTIVIRUS</button>
+</div>
+<!-- Classic 120x600 Skyscraper Retro Ad -->
+<div class="mx-auto w-[120px] min-h-[460px] bg-[#000000] border-2 border-red-700 p-1 flex flex-col justify-between items-center text-center shadow-[3px_3px_0px_#200000]" data-purpose="retro-skyscraper-ad">
+<!-- Top Ad Section -->
+<div>
+<div class="bg-red-700 text-white font-black text-[9px] py-0.5 tracking-tighter blink">
+              HOT CHAT 2001
+            </div>
+<div class="text-[10px] text-yellow-300 font-bold mt-2">
+              ARE YOU STILL LOOKING AT THE SCREEN?
+            </div>
+<div class="w-20 h-24 mx-auto my-2 border border-dashed border-red-500 bg-[#150000] flex items-center justify-center text-red-600 text-[9px] p-1">
+              [STATIC NOISE 56Kbps]
+            </div>
+<p class="text-[8px] text-gray-400 leading-tight">
+              TALK TO STRANGERS IN AN EMPTY NETWORK.
+            </p>
+</div>
+<!-- Middle Ad Psychological Trigger -->
+<div class="my-2 py-2 border-t border-b border-red-900 w-full">
+<span class="text-white text-[9px] font-bold">WE KNOW WHAT YOU FORGOT</span>
+<div class="mt-1 text-[8px] text-yellow-400">
+              CLICK TO PURGE HISTORY
+            </div>
+<button class="btn-win98 !bg-red-900 !text-white text-[8px] mt-1 w-full" onclick="alert('PURGE FAILED: Memory stored in deep magnetic clusters.')">
+              [ PURGE ]
+            </button>
+</div>
+<!-- Bottom Ad Action Button -->
+<div class="w-full">
+<a class="btn-win98 font-bold !bg-yellow-400 !text-black w-full text-[9px] py-1" href="https://discord.com/users/764897741046153247" target="_blank">
+              ENTER CHAT
+            </a>
+<div class="text-[7px] text-gray-600 mt-1">
+              NO SPYWARE GUARANTEE
+            </div>
+</div>
+</div>
+<!-- Links / Web-Ring Box -->
+<div class="portal-box win-outset" id="webring">
+<div class="portal-header flex justify-between items-center">
+<span>&gt; LINKS / WEB-RING</span>
+<span class="text-[8px] text-gray-300">RING ID: 09</span>
+</div>
+<div class="p-1.5 bg-[#0a0a0c] text-[10px] font-mono space-y-1">
+<ul class="space-y-1">
+<li><a class="text-blue-400 block" href="javascript:void(0)" onclick="openWinModal('WEIRD_SITE', '404', 'HTTP 404: The target host was removed from DNS.')">• weird site (404)</a></li>
+<li><a class="text-blue-400 block" href="javascript:void(0)" onclick="openWinModal('DEAD_MIRROR_2', '503', 'Service Unavailable. Connection dropped by peer.')">• dead mirror #2</a></li>
+<li><a class="text-blue-400 block" href="javascript:void(0)" onclick="openWinModal('GEOCITIES_ARCH', '2001', 'Archive mirror: Page 144 of SunsetStrip neighborhood.')">• geocities archive mirror</a></li>
+<li><a class="text-blue-400 block" href="javascript:void(0)" onclick="openWinModal('TERMINAL_0', 'UNKNOWN', 'TTY1 root login prompt with garbled characters.')">• unknown terminal</a></li>
+<li class="pt-1 border-t border-gray-800">
+<a class="text-yellow-300 font-bold block" href="mailto:hannahloveskalilinux@vk.com">
+                  • MAILBOX: hannahloveskalilinux@vk.com
+                </a>
+</li>
+<li>
+<a class="text-red-400 font-bold block" href="https://discord.com/users/764897741046153247" target="_blank">
+                  • WHO IS MNEMOPHOBIA?
+                </a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Subtle Unsettling Micro-message -->
+<div class="hidden-whisper text-[8px] text-center p-1 font-mono">
+          don't refresh. someone is reading this.
+        </div>
+</aside>
+<!-- END: Right Column -->
+</main>
+<!-- END: MainContentGrid -->
+<!-- BEGIN: Massive Vintage Footer -->
+<footer class="bg-[#050507] border-t-2 border-[#550000] p-3 text-center text-gray-400 space-y-2.5" data-purpose="web-footer-dense">
+<!-- Legal / Netscape Disclaimer -->
+<div class="text-[10px] space-y-0.5">
+<p class="font-bold text-gray-300">
+      © 1999-2003 MNEMOPHOBIA // ALL RIGHTS RESERVED (PARTIALLY EXPIRED)
+    </p>
+<p class="text-[9px] text-gray-400">
+      THIS PAGE IS PRESERVED AS FOUND. BEST VIEWED AT 800x600 IN NETSCAPE NAVIGATOR 4.7 OR INTERNET EXPLORER 5.5 // 16-BIT HIGH COLOR
+    </p>
+</div>
+<!-- Footer Quicklinks -->
+<div class="flex flex-wrap justify-center items-center gap-2 text-[10px] text-gray-300 font-bold">
+<a href="#welcome">[HOME]</a>
+<span>•</span>
+<a class="text-yellow-300" href="#pentest-sec">[SECURITY / PENTEST]</a>
+<span>•</span>
+<a href="mailto:hannahloveskalilinux@vk.com">[EMAIL]</a>
+<span>•</span>
+<a href="https://discord.com/users/764897741046153247" target="_blank">[DISCORD]</a>
+<span>•</span>
+<a href="#guestbook">[GUESTBOOK]</a>
+<span>•</span>
+<a href="#recovered-files">[ARCHIVE]</a>
+<span>•</span>
+<a class="text-red-400" href="#who-is-sec">[WHO IS MNEMOPHOBIA?]</a>
+</div>
+<!-- Massive 88x31 Badges Grid Showcase -->
+<div class="pt-1 flex flex-wrap justify-center items-center gap-1.5" data-purpose="retro-88x31-badges-massive">
+<!-- Badge 1: Netscape -->
+<div class="w-[88px] h-[31px] win-outset bg-black border border-gray-600 flex items-center justify-center p-0.5">
+<div class="bg-blue-900 text-white font-black text-[7px] w-full h-full flex flex-col items-center justify-center leading-tight">
+<span>NETSCAPE</span>
+<span class="text-yellow-400 text-[6px]">NOW 4.0</span>
+</div>
+</div>
+<!-- Badge 2: Notepad -->
+<div class="w-[88px] h-[31px] win-outset bg-[#c0c0c0] text-black font-bold text-[7px] flex flex-col items-center justify-center leading-none border border-gray-700">
+<span>MADE WITH</span>
+<span class="font-black text-blue-900 text-[8px]">NOTEPAD</span>
+</div>
+<!-- Badge 3: No Frames -->
+<div class="w-[88px] h-[31px] win-outset bg-red-950 text-white font-bold text-[7px] flex flex-col items-center justify-center leading-none border border-red-500">
+<span>NO FRAMES</span>
+<span class="text-yellow-300 text-[6px]">VERIFIED</span>
+</div>
+<!-- Badge 4: 800x600 Ready -->
+<div class="w-[88px] h-[31px] win-outset bg-green-950 text-green-300 font-bold text-[7px] flex flex-col items-center justify-center leading-none border border-green-700">
+<span>800x600</span>
+<span class="text-white text-[6px]">OPTIMIZED</span>
+</div>
+<!-- Badge 5: Valid HTML 4.01 -->
+<div class="w-[88px] h-[31px] win-outset bg-[#333333] text-white font-mono text-[7px] flex flex-col items-center justify-center leading-none border border-gray-400">
+<span>W3C HTML</span>
+<span class="text-yellow-400 font-bold text-[6px]">4.01 VALID</span>
+</div>
+<!-- Badge 6: Under Construction -->
+<div class="w-[88px] h-[31px] win-outset bg-yellow-400 text-black font-black text-[7px] flex items-center justify-center text-center leading-tight p-0.5 border border-black">
+      UNDER CONSTRUCTION
+    </div>
+<!-- Badge 7: Internet Explorer 5 -->
+<div class="w-[88px] h-[31px] win-outset bg-[#0055aa] text-white font-bold text-[7px] flex flex-col items-center justify-center leading-none">
+<span>MS INTERNET</span>
+<span class="text-yellow-300 text-[7px]">EXPLORER 5.0</span>
+</div>
+<!-- Badge 8: Free Hosting -->
+<div class="w-[88px] h-[31px] win-outset bg-[#222222] text-yellow-300 font-bold text-[7px] flex flex-col items-center justify-center leading-none border border-yellow-600">
+<span>GEOCITIES</span>
+<span class="text-white text-[6px]">COMMUNITY</span>
+</div>
+<!-- Badge 9: Chat Room -->
+<div class="w-[88px] h-[31px] win-outset bg-[#440022] text-pink-300 font-bold text-[7px] flex flex-col items-center justify-center leading-none border border-pink-500">
+<span>IRC NETWORK</span>
+<span class="text-yellow-300 text-[6px]">JOIN #MNEMO</span>
+</div>
+</div>
+<!-- Disconnect Status -->
+<div class="pt-1 text-[9px] text-[#770000] font-mono">
+    Last known update: UNKNOWN. // Host disconnected. // <span class="text-gray-600">EOF</span>
+</div>
+<div class="hidden-whisper text-[8px]">someone is still maintaining this.</div>
+</footer>
+<!-- END: Massive Vintage Footer -->
+</div>
+<!-- END: MasterContainer -->
+<!-- ========================================================= -->
+<!-- BEGIN: FLOATING RETRO OS POPUPS & DIALOGUES               -->
+<!-- ========================================================= -->
+<!-- POPUP 1: MEMORY FULL -->
+<div class="popup-window w-[310px] bg-[#c0c0c0] win-outset text-black font-['Tahoma'] top-20 left-4 sm:left-10" id="pop-memory">
+<div class="bg-gradient-to-r from-[#000080] to-[#1084d0] px-1.5 py-0.5 flex justify-between items-center text-white text-xs font-bold cursor-move">
+<span>⚠️ SYSTEM ALERT: FAT32</span>
+<button class="btn-win98 !px-1 !py-0 font-bold leading-none" onclick="closePopup('pop-memory')">✕</button>
+</div>
+<div class="p-2.5 text-[11px] space-y-2">
+<div class="flex items-start gap-2">
+<span class="text-2xl text-red-600">⚠️</span>
+<div>
+<div class="font-bold text-red-950">WARNING: YOUR MEMORY IS FULL.</div>
+<p class="text-[10px] text-gray-800 mt-0.5">Physical disk cluster 0x00FF exceeded write threshold. Purge cache?</p>
+</div>
+</div>
+<div class="flex justify-end gap-1 pt-1 border-t border-gray-400">
+<button class="btn-win98 w-14 font-bold" onclick="closePopup('pop-memory')">OK</button>
+<button class="btn-win98 w-16" onclick="closePopup('pop-memory')">CANCEL</button>
+</div>
+</div>
+</div>
+<!-- POPUP 2: INTERNET EXPLORER ACTIVE CONTENT -->
+<div class="popup-window w-[320px] bg-[#c0c0c0] win-outset text-black font-['Tahoma'] top-48 right-4 sm:right-16 hidden" id="pop-ie">
+<div class="bg-gradient-to-r from-[#000080] to-[#1084d0] px-1.5 py-0.5 flex justify-between items-center text-white text-xs font-bold cursor-move">
+<span>INTERNET EXPLORER</span>
+<button class="btn-win98 !px-1 !py-0 font-bold leading-none" onclick="closePopup('pop-ie')">✕</button>
+</div>
+<div class="p-2.5 text-[11px] space-y-2">
+<div class="flex items-start gap-2">
+<span class="text-2xl text-blue-700">❓</span>
+<div>
+<div class="font-bold text-black">ActiveX Security Warning</div>
+<p class="text-[10px] text-gray-800 mt-0.5">This page contains active content that may access your hard drive. Continue?</p>
+</div>
+</div>
+<div class="flex justify-end gap-1 pt-1 border-t border-gray-400">
+<button class="btn-win98 w-14 font-bold" onclick="closePopup('pop-ie')">YES</button>
+<button class="btn-win98 w-14" onclick="closePopup('pop-ie')">NO</button>
+</div>
+</div>
+</div>
+<!-- POPUP 3: MESSAGE FROM WEBMASTER -->
+<div class="popup-window w-[290px] bg-[#c0c0c0] win-outset text-black font-['Tahoma'] bottom-24 left-6 hidden" id="pop-webmaster">
+<div class="bg-gradient-to-r from-[#800000] to-[#b01010] px-1.5 py-0.5 flex justify-between items-center text-white text-xs font-bold cursor-move">
+<span>MESSAGE FROM WEBMASTER</span>
+<button class="btn-win98 !px-1 !py-0 font-bold leading-none" onclick="closePopup('pop-webmaster')">✕</button>
+</div>
+<div class="p-2.5 text-[11px] space-y-2">
+<div class="flex items-start gap-2">
+<span class="text-2xl text-yellow-600">💬</span>
+<div>
+<div class="font-bold text-red-950">are you still there?</div>
+<p class="text-[10px] text-gray-700 mt-0.5 font-mono">The server has been listening on port 8080 since 2001.</p>
+</div>
+</div>
+<div class="flex justify-end gap-1 pt-1 border-t border-gray-400">
+<button class="btn-win98 w-16 font-bold" onclick="closePopup('pop-webmaster')">OK</button>
+<a class="btn-win98 w-20 text-center font-bold" href="https://discord.com/users/764897741046153247" target="_blank">RESPOND</a>
+</div>
+</div>
+</div>
+<!-- POPUP 4: FILE DOWNLOAD -->
+<div class="popup-window w-[330px] bg-[#c0c0c0] win-outset text-black font-['Tahoma'] top-72 left-1/3 hidden" id="pop-download">
+<div class="bg-gradient-to-r from-[#000080] to-[#1084d0] px-1.5 py-0.5 flex justify-between items-center text-white text-xs font-bold cursor-move">
+<span>FILE DOWNLOAD: NETSCAPE</span>
+<button class="btn-win98 !px-1 !py-0 font-bold leading-none" onclick="closePopup('pop-download')">✕</button>
+</div>
+<div class="p-2.5 text-[11px] space-y-2">
+<div class="flex items-start gap-2">
+<span class="text-2xl text-green-700">💾</span>
+<div>
+<div class="font-bold">mnemo_backup.zip (4.31 MB)</div>
+<p class="text-[9px] text-gray-700 mt-0.5">Estimated time: 14 min 32 sec via 56k Modem.</p>
+</div>
+</div>
+<div class="w-full bg-white border border-gray-600 h-3 p-0.5">
+<div class="bg-blue-800 h-full w-[18%]"></div>
+</div>
+<div class="flex justify-end gap-1 pt-1 border-t border-gray-400">
+<button class="btn-win98 font-bold" onclick="alert('DOWNLOAD FAILED: Connection reset by peer.'); closePopup('pop-download');">DOWNLOAD</button>
+<button class="btn-win98" onclick="closePopup('pop-download')">CANCEL</button>
+</div>
+</div>
+</div>
+<!-- GENERAL MODAL WINDOW (For table files & actions) -->
+<div class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-2 hidden" id="winModal">
+<div class="w-full max-w-[390px] bg-[#c0c0c0] win-outset shadow-[4px_4px_0px_#000] text-black font-['Tahoma']">
+<!-- Titlebar -->
+<div class="bg-gradient-to-r from-[#000080] to-[#1084d0] px-1.5 py-0.5 flex justify-between items-center text-white text-xs font-bold">
+<span id="modalTitle">SYSTEM ALERT</span>
+<button class="btn-win98 !px-1.5 !py-0 font-bold leading-none" onclick="closeWinModal()">✕</button>
+</div>
+<!-- Dialog Body -->
+<div class="p-3 text-[11px] space-y-2">
+<div class="flex items-start gap-2">
+<span class="text-2xl text-red-600" id="modalIcon">⚠️</span>
+<div>
+<div class="font-bold text-red-950" id="modalNotice">FILE CORRUPTED // LAST MODIFIED: 03:17 AM</div>
+<p class="mt-1 text-gray-800 font-mono text-[10px]" id="modalDescription">
+            THIS FILE WAS NOT HERE BEFORE.
+          </p>
+</div>
+</div>
+<div class="text-[9px] bg-white p-1.5 border border-gray-600 font-mono text-gray-700" id="modalOffset">
+        OFFSET: 0xDEADBEEF // CLUSTER: 404_VOID // INTEGRITY: 0%
+      </div>
+</div>
+<!-- Button Row -->
+<div class="bg-[#c0c0c0] px-3 pb-2 flex justify-end gap-1.5">
+<button class="btn-win98 w-16 text-center font-bold" onclick="closeWinModal()">OK</button>
+<button class="btn-win98 w-20 text-center font-bold" onclick="retryMemory()">RETRY</button>
+<a class="btn-win98 w-24 text-center font-bold" href="mailto:hannahloveskalilinux@vk.com">REPORT BUG</a>
+</div>
+</div>
+</div>
+<!-- END: GENERAL MODAL WINDOW -->
+<!-- BEGIN: Interactive Scripts -->
+<script data-purpose="modal-and-popups-handler">
+    function openWinModal(filename, time, description) {
+      document.getElementById('modalTitle').innerText = 'ERROR: ' + filename;
+      document.getElementById('modalNotice').innerText = 'FILE CORRUPTED // LAST MODIFIED: ' + time;
+      document.getElementById('modalDescription').innerText = description;
+      document.getElementById('winModal').classList.remove('hidden');
+    }
+
+    function closeWinModal() {
+      document.getElementById('winModal').classList.add('hidden');
+    }
+
+    function retryMemory() {
+      alert("THE REQUESTED MEMORY COULD NOT BE LOCATED.\nCluster sector returned 0x00 bytes.");
+      closeWinModal();
+    }
+
+    function closePopup(id) {
+      const el = document.getElementById(id);
+      if (el) el.classList.add('hidden');
+    }
+
+    function restorePopups() {
+      const popups = ['pop-memory', 'pop-ie', 'pop-webmaster', 'pop-download'];
+      popups.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.remove('hidden');
+      });
+    }
+
+    function triggerAdClick(buttonEl, replacementText) {
+      buttonEl.innerText = '[ACCESSED]';
+      buttonEl.disabled = true;
+      buttonEl.style.backgroundColor = '#555';
+      alert(replacementText);
+    }
+
+    function triggerGlitchNotice() {
+      alert("CRITICAL LOG: \n\nYou clicked what you were told not to touch.\nMemory buffer has logged your session.\nAddress reported to: hannahloveskalilinux@vk.com");
+    }
+
+    // Auto open popups on staggered delay to mimic 2000s popup storms
+    setTimeout(() => {
+      const el = document.getElementById('pop-ie');
+      if (el) el.classList.remove('hidden');
+    }, 2800);
+
+    setTimeout(() => {
+      const el = document.getElementById('pop-webmaster');
+      if (el) el.classList.remove('hidden');
+    }, 6500);
+
+    // Subtle visitor counter increment glitch
+    let count = 13;
+    setInterval(() => {
+      if (Math.random() > 0.7) {
+        count++;
+        const el = document.getElementById('visitor-counter');
+        if (el) el.innerText = String(count).padStart(6, '0');
+      }
+    }, 9000);
+  </script>
+<!-- END: Interactive Scripts -->
+</body></html>
